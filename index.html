@@ -14,15 +14,15 @@
                 lang=document.getElementsByTagName("html")[0].getAttribute("lang");
             }
             function lang_eng(){
-                get_lang()
+                get_lang();
                 window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=en');
             }
             function lang_ua(){
-                get_lang()
+                get_lang();
                 window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=uk');
             }
             function lang_ru(){
-                get_lang()
+                get_lang();
                 window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=ru');
             }
         </script>
@@ -37,15 +37,15 @@
                     <a class="google_translate" href="#" rel="nofollow" title="UA" onclick="lang_ua()"><div class="lang_ua"><button>UA</button></div></a>
                     <a class="google_translate" href="#" rel="nofollow" title="RU" onclick="lang_ru()"><div class="lang_ru"><button>RU</button></div></a>
                     <script>
-                        if (window.location.href == "https://filmkost.github.io/"){
+                        if (window.location.href = "https://filmkost.github.io/"){
                             document.getElementById('menu').style.visibility = 'hidden';
                             document.getElementById('button').style.visibility = 'visible';
-			    console.log("True")
+			    console.log("True");
 
                         }else{
                             document.getElementById('menu').style.visibility = 'hidden';
 	                    document.getElementById('button').style.visibility = 'hidden';
-		            console.log("False")
+		            console.log("False");
                         }
                     </script>
                 </div>
