@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>FILMKOST</title>
+		<link href="../style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="..\img\favicon.png" type="image/png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=devise-width, initial-scale=1">
+        <script src="../js.js"></script>
+    </head>
+    <header>
+        <script>
+            var lang="ru";
+            function get_lang(){
+                lang=document.getElementsByTagName("html")[0].getAttribute("lang");
+            }
+            function lang_eng(){
+                get_lang()
+                window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=en');
+            }
+            function lang_ua(){
+                get_lang()
+                window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=uk');
+            }
+            function lang_ru(){
+                get_lang()
+                window.open ('http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=id%cen&ru=en&sl='+lang+'&tl=ru');
+            }
+        </script>
+        <img class="logo" src="../img/logo.png" width="460px" height="100px">
+		<ul class="buttons">
+			<li><a id="Novetly" class="button" href="../index.html">Главная</a></li>
+			<li><a id="Kategorii" class="button" onclick="kategories()">Категории</a></li>
+			<li><a class="button" id="Novetly" href="../plash/Novetly.html">Новинки</a></li>
+            <li><a class="button" id="Search" href="../plash/Search.html">Поиск</a></li>
+			<div class="laungue" id="laungue">
+                <div class="menu" id="menu">
+					<a class="google_translate" href="#" rel="nofollow" title="English" onclick="lang_eng()"><div class="lang_en"></div><button>ENG</button></a>
+                    <a class="google_translate" href="#" rel="nofollow" title="UA" onclick="lang_ua()"><div class="lang_ua"><button>UA</button></div></a>
+                    <a class="google_translate" href="#" rel="nofollow" title="RU" onclick="lang_ru()"><div class="lang_ru"><button>RU</button></div></a>
+                    <script>
+                        if (window.location.href == "https://filmkost.github.io/years/2007.html") {
+                            document.getElementById('menu').style.visibility = 'visible';
+                            //	document.getElementById('button').style.visibility = 'visible';
+                            //	document.getElementById('button').style.visibility = 'visible';
+                        } else {
+			    document.getElementById('menu').style.visibility = 'hidden';
+	                    document.getElementById('button').style.visibility = 'hidden';
+			}
+                    </script>
+                </div>
+				<button id="button" class="w" onclick="laungue()">Язык</button>
+			</div>
+		</ul>
+    </header>
+    <body>
+        <!-- http://translate.google.com/translate?u=https%3A%2F%2Fpsdariussitetestversionfffff.on.drv.tw%2Ffilmkost%2F%23&langpair=id%cen&ru=en&sl=ru&tl=en -->
+        <div class="main">
+            <div class="kategorii" id="jenreAndYears">
+                <ul class="kategories">
+                    <li><a id="1" class="button" href="..\jenre\Western.html">Вестерн</a></li>
+                    <li><a id="2" class="button" href="..\jenre\Story.html" >История</a></li>
+                    <li><a id="3" class="button" href="..\jenre\Family.html">Семейный</a></li>
+                    <li><a id="4" class="button" href="..\jenre\Biography.html">Биография</a></li>
+                    <li><a id="5" class="button" href="..\jenre\Comedy.html">Комедия</a></li>
+                    <li><a id="6" class="button" href="..\jenre\Action.html">Боевик</a></li>
+                    <li><a id="7" class="button" href="..\jenre\Crime.html">Криминал</a></li>
+                    <li><a id="8" class="button" href="..\jenre\Sport.html">Спорт</a></li>
+                    <li><a id="9" class="button" href="..\jenre\Military.html">Военный</a></li>
+                    <li><a id="10" class="button" href="..\jenre\Melodrama.html">Мелодрама</a></li>
+                    <li><a id="11" class="button" href="..\jenre\Thriller.html">Триллер</a></li>
+                    <li><a id="12" class="button" href="..\jenre\Detective.html">Детектив</a></li>
+                    <li><a id="13" class="button" href="..\jenre\Music.html">Музыка</a></li>
+                </ul>
+                <ul class="kategories">
+                    <li><a id="14" class="button" href="..\jenre\Horror.html">Ужасы</a></li>
+                    <li><a id="15" class="button" href="..\jenre\Drama.html">Драма</a></li>
+                    <li><a id="16" class="button" href="..\jenre\fantasy.html">Фэнтези</a></li>
+                    <li><a id="17" class="button" href="..\jenre\Documentary.html">Документальный</a></li>
+                    <li><a id="18" class="button" href="..\jenre\Adventure.html">Приключения</a></li>
+                    <li><a id="19" class="button" href="..\jenre\Fiction.html">Фантастика</a></li>
+                    <li><a id="20" class="button" href="..\jenre\Comic_Movie.html">Кинокомикс</a></li>
+                    <li><a id="21" class="button" href="..\jenre\Sci-Fi.html">Научная фантастика</a></li>
+                    <li><a id="22" class="button" href="..\jenre\Psychological_thriller.html">Психологический триллер</a></li>
+                    <li><a id="23" class="button" href="..\jenre\Movies.html">Фильмы</a></li>
+                    <li><a id="24" class="button" href="..\jenre\Series.html">Сериалы</a></li>
+                    <li><a id="25" class="button" href="..\jenre\Cartoons_Series.html">Мультсериалы</a></li>
+                    <li><a id="26" class="button" href="..\jenre\Cartoons_Movies.html">Мультфильмы</a></li>
+                </ul>
+                <hr class="vertical" />
+                <ul class="kategories">
+                    <li><a class="button1" href="2000.html" >2000</a></li>
+                    <li><a class="button1" href="2001.html" >2001</a></li>
+                    <li><a class="button1" href="2002.html" >2002</a></li>
+                    <li><a class="button1" href="2003.html" >2003</a></li>
+                    <li><a class="button1" href="2004.html" >2004</a></li>
+                    <li><a class="button1" href="2005.html" >2005</a></li>
+                    <li><a class="button1" href="2006.html" >2006</a></li>
+                    <li><a class="button1" href="2007.html" >2007</a></li>
+                    <li><a class="button1" href="2008.html" >2008</a></li>
+                    <li><a class="button1" href="2009.html" >2009</a></li>
+                    <li><a class="button1" href="2010.html" >2010</a></li>
+                    <li><a class="button1" href="2011.html" >2011</a></li>
+                    <li><a class="button1" href="2012.html" >2012</a></li>
+                </ul>
+                <ul class="kategories">
+                    <li><a class="button1" href="2013.html" >2013</a></li>
+                    <li><a class="button1" href="2014.html" >2014</a></li>
+                    <li><a class="button1" href="2015.html" >2015</a></li>
+                    <li><a class="button1" href="2016.html" >2016</a></li>
+                    <li><a class="button1" href="2017.html" >2017</a></li>
+                    <li><a class="button1" href="2018.html" >2018</a></li>
+                    <li><a class="button1" href="2019.html" >2019</a></li>
+                    <li><a class="button1" href="2020.html" >2020</a></li>
+                    <li><a class="button1" href="2021.html" >2021</a></li>
+                    <li><a class="button1" href="2022.html" >2022</a></li>
+                    <li><a class="button1" href="2023.html" >2023</a></li>
+                    <li><a>    </a></li>
+                    <li><a id="X" class="button1" onclick="kategoriiX()">Закрыть</a></li>
+                </ul>
+            </div>
+            <h1 class="name">2007</h1>
+        </div>
+    </body>
+</html>
